@@ -34,10 +34,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.0", ">= 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", ">= 12.3.3"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "vcr", '~> 4.0', '>= 4.0.0'
 
-  spec.add_runtime_dependency 'faraday', '~> 0.15', '>= 0.15.4'
-  spec.add_runtime_dependency 'faraday_middleware', '~> 0.13', '>= 0.12.2'
+  spec.add_runtime_dependency 'faraday', '~> 1.0', '>= 1.0.1', '< 2.0.0'
+  spec.add_runtime_dependency 'faraday_middleware', '~> 1.0.0', '>= 1.0.0', '< 2.0.0'
 end
